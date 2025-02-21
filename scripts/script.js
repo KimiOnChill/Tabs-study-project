@@ -5,6 +5,7 @@
 //TODO
 ////this is not nessasary
 let container = document.querySelector(".tabs-container");
+let button = document.querySelector(".tab-button");
 //default input of 6 tabs
 let input = {
   tabs : [
@@ -41,16 +42,26 @@ let input = {
 
 const allTabs = input.tabs;
 
-for (tab of allTabs){
+for (const tab of allTabs){
     container.innerHTML +=` 
     <div class="tab">
       <h3 class="tab-title">${tab.title}</h3>
-      <button class="tab-button"></button>
+      <button class="tab-button">Toggle</button>
       <div class="tab-content ${tab.active ? "": "hidden"}">
-        <p class="content-description">${tab.decription}</p>
+        <p class="content-description">${tab.description}</p>
       </div>
     </div>`
   ;
+}
+
+window.onload = function() {
+  const buttons = document.querySelectorAll(".tab-button");
+  buttons.forEach((button, index) => {
+    button.addEventListener("click", () => {
+      const content = document.querySelectorAll(".tab-content")[index];
+      content.classList.toggle("hidden");
+    });
+  });
 }
 
 

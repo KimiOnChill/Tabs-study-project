@@ -1,7 +1,7 @@
-# TITLE
+# This is a study project on tabs creation
 
-
-Design was created complitely by myself.
+Design and functional features:
+* Tabs should be created on the page after input...
 
 # Github
-[Link on to the git hub](https://github.com/KimiOnChill/Calculator_study.git)
+[Link on to the git hub](https://github.com/KimiOnChill/Tabs-study-project)
