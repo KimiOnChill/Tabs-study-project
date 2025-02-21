@@ -1,0 +1,59 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Raleway, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+blockquote {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: inherit;
+}
+
+img {
+  width: 100%;
+}
+
+button {
+  font: inherit;
+}
+
+:root {
+  /* !! MY color variables */
+  --green-back: #1B6535;
+  --green: #558B7E;
+  --green-tennis: #C9EC93;
+  --button-border: #F0ECE3;
+  --button-color: #F4C7AB;
+  --main-text: #010A3D;
+
+  /* !! MY unit variables */
+  --XXXS: 4px;
+  --XXS: 8px;
+  --XS: 12px;
+  --small: 16px;
+  --standart-small: 20px;
+  --standart: 28px;
+  --standart-large: 40px;
+  --large: 60px;
+  --XL: 100px;
+  --XXL: 160px;
+  --XXXL: 240px;
+}
