@@ -18,6 +18,7 @@
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .tab{
@@ -28,13 +29,15 @@
 }
 
 .tab-title {
+  margin: 10px auto 10px 5px;
   font-size: 25px;
   font-weight: bold;
 }
 
 .tab-button {
-  height: 35px;
-  width: 100%;
+  min-height: 35px;
+  width: 90%;
+  margin: 0 auto 10px 10px;
   border-radius: 16px;
   cursor: pointer;
   color: #0a0a23;
@@ -49,9 +52,9 @@
 
 .tab-content{
   width: 100px;
-  min-height: 30px;
   text-align: center;
-  padding-top: 5px;
+  margin: 7px 0;
+  padding: 7px 0;
   background-color: #0e61a9;
   color: white;
   border-radius: 16px;

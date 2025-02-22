@@ -4,6 +4,7 @@
 //!alert
 //TODO
 ////this is not nessasary
+
 let container = document.querySelector(".tabs-container");
 let button = document.querySelector(".tab-button");
 //default input of 6 tabs
@@ -54,14 +55,25 @@ for (const tab of allTabs){
   ;
 }
 
+/*
+funtion that will close every tab exept one
+function checkOpen () {
+  let arrToCheck=[];
+  for (const tab of allTabs){
+    tab.active ? arrToCheck.push(1) : arrToCheck.push(0);
+
+  }
+}
+*/
+
 window.onload = function() {
   const buttons = document.querySelectorAll(".tab-button");
   buttons.forEach((button, index) => {
     button.addEventListener("click", () => {
-      const content = document.querySelectorAll(".tab-content")[index];
-      content.classList.toggle("hidden");
+      document.querySelectorAll(".tab-content")[index].classList.toggle("hidden");
     });
   });
+  // checkOpen();
 }
 
 
